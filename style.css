@@ -62,7 +62,7 @@ body
     height: 100%;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(#c57e65, #e28462);
+    background: linear-gradient(#866c63, #64000c);
 }
 
 .handle
@@ -112,7 +112,11 @@ body
     bottom: 30px;
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent);
+    background: radial-gradient(
+        rgba(0,0,0,0.2) 25%,
+        transparent,
+        transparent
+    );
 }
 
 .vapour
@@ -142,11 +146,14 @@ body
 .beans
 {
     margin: 0;
+    top: 60px;
+    left: 30px;
+    z-index: 1;
     width: 50px;
-    left: -50px;
     height: 28px;
     border-radius: 40%;
-    transform: rotate(40deg); 
+    position: absolute;
+    transform: rotate(24deg); 
     background-color: #9f5331;
     border: 2px solid #64000c;
     border-bottom-left-radius: 20px;
@@ -174,7 +181,7 @@ body
 }
 
 .beans:hover{
-    animation: bean-roll .7s linear;
+    animation: bean-roll 1s linear;
 }
 
 @keyframes animate
@@ -206,19 +213,19 @@ body
 {
     0%
     {   
-        transform: rotate(40deg);
+        transform: rotate(30deg);
     }
     25%
     {
-        transform: rotate(30deg);
+        transform: rotate(40deg);
     }
     50%
     {
-        transform: rotate(40deg);
+        transform: rotate(30deg);
     }
     100%
     {
-        transform: rotate(30deg);
+        transform: rotate(40deg);
     }
 }
 
